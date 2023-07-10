@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Read the CSV file into a DataFrame
-df = pd.read_csv('C:\\Users\\Bahar\\Desktop\\USA_Housing.csv')
+df = pd.read_csv('USA_Housing.csv')
 
 # Remove the last column from the DataFrame
 df = df.iloc[:, :-1]
