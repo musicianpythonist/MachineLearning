@@ -1,9 +1,12 @@
-In this code, we import the required libraries, generate a DataFrame with random data for age, gender, salary, and years of experience, and print the first few rows of the DataFrame using df.head().
+* SimpleLinearRegression
 
-We then assign the features (X) as the 'yearsExperience' column and the target variable (Y) as the 'salary' column from the DataFrame.
+Features (X) are assigned as the 'yearsExperience' column and the target variable (Y) as the 'salary' column.
+Data is split into training and testing sets (80% for training) and reshaped for the linear regression model.
+A linear regression model is created, fitted to the training data, and used to make predictions. Mean squared error (MSE) and root mean squared error (RMSE) are calculated. Actual vs. predicted salaries are plotted.
 
-Next, we split the data into training and testing sets using train_test_split(), with 80% of the data for training and 20% for testing. We reshape the training and testing features using values.reshape(-1, 1) to ensure they are in the correct shape for the linear regression model.
+* MultipleLinearRegression
 
-We create a linear regression model, fit it to the training data, and make predictions on the test data. The mean squared error (MSE) and root mean squared error (RMSE) are then calculated to evaluate the model's performance.
-
-Finally, we plot the actual salaries (blue dots) against the predicted salaries (red regression line) based on years of experience. The plot is labeled and displayed using plt.show().
+It reads a CSV file containing housing information into a DataFrame.
+The DataFrame is preprocessed by removing the last column and modifying the column names.
+The data is split into training and test sets.
+A linear regression model is built and trained using the training data, and predictions are made on the test data to evaluate the model's performance.
